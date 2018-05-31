@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>YOTE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="./css/reset.css">
+<link rel="stylesheet" type="text/css" href="./css/template.css">
+<script src="phonegap.js"></script>
+</head>
+<body>
+
+  <div id="menu" class="menuHolder none">
+    <div class="MenubuttonHolder">
+    <button id="menuScore"type="button" name="button">SCORE <br> <span id="scoreMenu"></span></button>
+    <button type="button" name="button">HIGHSCORE <br> <span id="highscore">0</span></button>
+    <button id="music" class="on"type="button" name="button"><div class="imageHolder musicHolder"></div></button>
+    <button id="sound" class="on"type="button" name="button"><div class="imageHolder soundHolder"></div></button>
+    <button id="placesVisited"type="button" name="button">PLACES VISITED</button>
+    <button id="menuResume" class="block"type="button" name="button">RESUME</button>
+    <button id="menuRestart" class="none"type="button" name="button">RESTART</button>
+    </div>
+  </div>
+
+  <div id="canvasHolder" class="canvasHolder">
+    <button id="startGameButton" type="button" name="button">Play</button>
+  </div>
+
+  <div id="introScreen" class="canvasHolder">
+    <p>TAP TO START THE ADVENTURE</p>
+  </div>
+
+  <div id="gamePlayButtons" class="canvasHolder">
+    <h1 id="score">0</h1>
+    <button id="menuButton" class="btn-green" type="button" name="button">MENU</button>
+  </div>
+
+  <div id="places" class="canvasHolder none">
+    <h1>Places visited</h1>
+    <div class="placeholder">
+      <div class="placeOverlayHolder">
+        <div id="landOne"class="placeOn"></div>
+        <img src="./img/backgroundZero.png" alt="">
+      </div>
+      <div class="placeOverlayHolder">
+        <div id="landTwo"class="placeOn"></div>
+        <img src="./img/backgroundOne.png" alt="">
+      </div>
+      <div class="placeOverlayHolder">
+        <div id="landThree"class="placeOn"></div>
+        <img src="./img/backgroundTwo.png" alt="">
+      </div>
+      <div class="placeOverlayHolder">
+        <div id="landFour"class="placeOn"></div>
+        <img src="./img/backgroundThree.png" alt="">
+      </div>
+      <div class="placeOverlayHolder">
+        <div id="landFive"class="placeOn"></div>
+        <img src="./img/backgroundFour.png" alt="">
+      </div>
+      <div class="placeOverlayHolder">
+        <div id="landSix"class="placeOn"></div>
+        <img src="./img/backgroundFive.png" alt="">
+      </div>
+      <div class="placeOverlayHolder">
+        <div id="landSeven"class="placeOn"></div>
+        <img src="./img/backgroundSix.png" alt="">
+      </div>
+      <div class="placeOverlayHolder">
+        <div id="landEight"class="placeOn"></div>
+        <img src="./img/backgroundSeven.png" alt="">
+      </div>
+      <div class="placeOverlayHolder">
+        <div id="landNine"class="placeOn"></div>
+        <img src="./img/backgroundEight.png" alt="">
+      </div>
+
+      <button id="placeBack"class="btn-green" type="button" name="button">BACK</button>
+    </div>
+  </div>
+
+  <div id="whiteOverlay" class="canvasHolder none"></div>
+
+  <button id="Move_up"></button>
+
+<script src="./js/template.js"></script>
+</body>
+</html>
